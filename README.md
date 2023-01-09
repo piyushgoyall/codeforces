@@ -1,4 +1,4 @@
-# codeforces\
+# codeforces
 
 These codes are answers to questions on codeforces :thinking:
 
