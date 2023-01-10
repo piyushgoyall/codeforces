@@ -34,7 +34,7 @@ int main()
 }
 
 
-###**** OR ****
+**** OR ****
 
 
 #include<bits/stdc++.h>
