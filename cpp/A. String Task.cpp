@@ -33,7 +33,7 @@ int main()
     return 0;
 }
 
-****OR ****
+// ****OR ****
 
 #include <bits/stdc++.h>
    using namespace std;

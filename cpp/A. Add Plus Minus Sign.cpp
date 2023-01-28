@@ -41,15 +41,15 @@ int main()
     }
 }
 
-****ANSWER ****
+// ****ANSWER ****
 
-        Input 3 2 11 5 01101 5 10001
+//         Input 3 2 11 5 01101 5 10001
 
-    Participant's output -
-    +-++ ++ +-
+//     Participant's output -
+//     +-++ ++ +-
 
-             Jury's answer -
-    +-++ ++ +-
+//              Jury's answer -
+//     +-++ ++ +-
 
-             Checker comment
-                 ok OK !(3 test cases)
+//              Checker comment
+//                  ok OK !(3 test cases)
