@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
- 
+
 using namespace std;
- 
+
 int main()
 {
     int tc;
@@ -9,19 +9,19 @@ int main()
     while (tc--)
     {
         int n;
-        cin>>n;
-        string s,temp;
-        cin>>s;
+        cin >> n;
+        string s, temp;
+        cin >> s;
         int curr = 0;
-        if(s[0]=='1')
+        if (s[0] == '1')
         {
             curr++;
         }
-        for(int i=1;i<s.length();i++)
+        for (int i = 1; i < s.length(); i++)
         {
-            if(s[i]=='1')
+            if (s[i] == '1')
             {
-                if(curr==0)
+                if (curr == 0)
                 {
                     temp += "+";
                     curr++;
@@ -37,32 +37,19 @@ int main()
                 temp += "+";
             }
         }
-        cout<<temp<<endl;
+        cout << temp << endl;
     }
 }
 
+****ANSWER ****
 
-**** ANSWER ****
+        Input 3 2 11 5 01101 5 10001
 
+    Participant's output -
+    +-++ ++ +-
 
-Input
-3
-2
-11
-5
-01101
-5
-10001
+             Jury's answer -
+    +-++ ++ +-
 
-Participant's output
--
-+-++
-+++-
-
-Jury's answer
--
-+-++
-+++-
-
-Checker comment
-ok OK! (3 test cases)
+             Checker comment
+                 ok OK !(3 test cases)
