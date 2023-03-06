@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int k, arr[12];
+    cin >> k;
+    if (k == 0)
+    {
+        cout << 0;
+        return 0;
+    }
+    for (int i = 0; i < 12; i++)
+    {
+        cin >> arr[i];
+    }
+    int si = sizeof(arr) / sizeof(arr[0]);
+    sort(arr, arr + si);
+    // for (int i = 0; i < 12; i++)
+    // {
+    //     cout << arr[i];
+    // }
+    int sum = 0, temp = si, count = 0;
+    while (sum < k)
+    {
+        sum = sum + arr[temp - 1];
+        temp = temp - 1;
+        count += 1;
+        if (temp == -1)
+        {
+            cout << -1;
+            return 0;
+        }
+    }
+    cout << count;
+    return 0;
+}
