@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n, k, l, c, d, p, nl, np;
+    cin >> n >> k >> l >> c >> d >> p >> nl >> np;
+    int a = (k * l) / nl, b = c * d, t = p / np;
+    if (a <= b && a <= t)
+    {
+        cout << a / n << endl;
+    }
+    else if (b <= a && b <= t)
+    {
+        cout << b / n << endl;
+    }
+    else if (t <= a && t <= b)
+    {
+        cout << t / n << endl;
+    }
+    return 0;
+}
