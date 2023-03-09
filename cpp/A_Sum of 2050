@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        long long int n;
+        cin >> n;
+        long long int rem, sum = 0;
+        if (n % 2050 != 0)
+        {
+            cout << -1 << endl;
+        }
+        else
+        {
+            n = n / 2050;
+            while (n > 0)
+            {
+                rem = n % 10;
+                sum = sum + rem;
+                n = n / 10;
+            }
+            cout << sum << endl;
+        }
+    }
+    return 0;
+}
